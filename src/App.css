@@ -1,0 +1,53 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+.navBar{
+  border-radius: 6px; 
+  background-color: rgb(232, 225, 225);
+}
+
+.navBar ul{
+  overflow: auto;
+}
+
+.navBar li{
+  float: left;
+  text-decoration: none;
+  list-style: none;
+  padding: 2px;
+  margin-top: 7.5px;
+}
+
+.navBar a{
+  color: rgb(55, 51, 51);
+  font-size: large;
+  text-decoration: none;
+  margin: 0px 6px 0px 6px;
+  padding: 6px;
+  border-radius: 3px;
+}
+
+.navBar a:hover{
+  color: rgb(232, 225, 225);
+  background-color: rgb(55, 51, 51);
+}
+
+.navBar .searchBox{
+  justify-content: center;
+  float: right;
+  padding: 6px;
+}
+
+.navBar .searchBox input{
+  border-radius: 4px;
+  padding: 4px;
+}
+
+.navBar .searchBox button
+{
+  height: 25px;
+}
