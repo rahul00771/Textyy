@@ -12,6 +12,7 @@
 
 .navBar ul{
   overflow: auto;
+  padding-bottom: 2.5px;
 }
 
 .navBar li{
@@ -45,9 +46,34 @@
 .navBar .searchBox input{
   border-radius: 4px;
   padding: 4px;
+  width: 75px;
+  height: 24px;
 }
 
-.navBar .searchBox button
+h2{
+  margin: 20px;
+}
+
+.textForm{
+
+  display: flex;
+  justify-content: center;
+}
+
+.textForm textarea
 {
-  height: 25px;
+  padding: 6px;
+  width: 60%;
+}
+
+.btnContainer{
+  
+  display: flex;
+  margin-left: 20%;
+  margin-top: 15px;
+  height: 40px;
+}
+
+.btnContainer button{
+  padding: 8px;
 }
