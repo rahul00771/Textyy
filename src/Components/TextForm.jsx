@@ -7,11 +7,19 @@ import React, { useState } from 'react'
 export default function  TextForm()
 {
     const [text, setText] = useState("");
+    let newText = "";
 
-    function handleClick()
+    function handleUpClick()
     {
-        let newText = text.toUpperCase();
-        setText(newText)
+        newText = text.toUpperCase();
+        setText(newText);
+        
+    }
+
+    function handleLoClick()
+    {
+        newText = text.toLowerCase();
+        setText(newText);
     }
 
     const handleChange = (event)=>
@@ -21,13 +29,19 @@ export default function  TextForm()
 
     return(
         <>
+        <div className='container'>
             <h2>Enter the text to analyze</h2>
             <div className='textForm'>
                 <textarea onChange={handleChange} rows={24} type='text' placeholder='Enter text here' value={text} />
             </div>
             <div className='btnContainer'>
-                <button onClick={handleClick}>Convert to UpperCase</button>
+                <button onClick={handleUpClick}>Convert to UpperCase</button>
+                <button onClick={handleLoClick}>Convert to LowerCase</button>
             </div>
+
+            <h2>Preview:</h2>
+            <p>{text}</p>
+        </div>
         </>
     );
 }
