@@ -57,40 +57,21 @@
   height: 24px;
 }
 
-.textForm{
+/* CSS for text form*/
 
-  display: flex;
-  justify-content: center;
-}
-
-.textForm textarea
-{
-  padding: 6px;
+.textForm textarea{
   width: 60%;
   height: 300px;
 }
 
-.btnContainer{
-  
-  display: flex;
-  margin-left: 20%;
-  margin-top: 15px;
-  height: 32px;
-}
-
-.btnContainer button{
-  padding: 6px;
-  margin-right: 10px;
-  border-radius: 6px;
-}
-
 .container{
   position: relative;
+  left: 20%;
 }
 
-.container h2, p{
-  position: relative;
-  left: 18.7%;
-  margin: 4px;
-  padding: 6px;
+.container h2, p, button{
+  padding: 1px;
+  margin: 4px 4px 6px 1px;
 }
+
+

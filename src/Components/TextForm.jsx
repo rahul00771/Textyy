@@ -13,7 +13,6 @@ export default function  TextForm()
     {
         newText = text.toUpperCase();
         setText(newText);
-        
     }
 
     function handleLoClick()
@@ -27,6 +26,11 @@ export default function  TextForm()
         setText(event.target.value);
     }
 
+    function wordCount(str) {
+        var m = str.match(/[^\s]+/g)
+        return m ? m.length : 0;
+      }
+
     return(
         <>
         <div className='container'>
@@ -38,8 +42,8 @@ export default function  TextForm()
                 <button onClick={handleUpClick}>Convert to UpperCase</button>
                 <button onClick={handleLoClick}>Convert to LowerCase</button>
             </div>
-
             <h2>Preview:</h2>
+            <p>The text has {wordCount(text)} words and {text.length} characters.</p>
             <p>{text}</p>
         </div>
         </>
