@@ -13,13 +13,15 @@
 
 
 .navBar{
-  border-radius: 6px; 
-  background-color: rgb(232, 225, 225);
+  width: 100%;
+   
 }
 
 .navBar ul{
+  border-radius: 8px;
+  background-color: rgb(199 226 169);
   overflow: auto;
-  padding-bottom: 2.5px;
+  padding-bottom: 7px;
 }
 
 .navBar li{
@@ -62,16 +64,38 @@
 .textForm textarea{
   width: 60%;
   height: 300px;
+  padding: 5px;
+  font-size: 17px;
 }
 
 .container{
+  margin-top: 30px;
   position: relative;
   left: 20%;
 }
 
-.container h2, p, button{
-  padding: 1px;
-  margin: 4px 4px 6px 1px;
+.container textarea{
+  margin-top: 20px;
 }
 
+.container h2, p, button, input{
+  padding: 1px;
+  margin: 6px 4px 6px 1px;
+  font-size: large;
+}
 
+.container input{
+  width: fit-content;
+  padding-left: 9.5px;
+  padding-right: 9.5px;
+}
+
+img{
+  margin-left: 20px;
+  height: 15px;
+  width: 20px;
+}
+
+img:hover{
+  cursor: pointer;
+}
