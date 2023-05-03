@@ -1,7 +1,7 @@
 
 @font-face {
   font-family: myFont;
-  src: url(../public/Rajdhani-Regular.ttf);
+  src: url(../Rajdhani-Regular.ttf);
 }
 
 *{
@@ -11,15 +11,14 @@
   font-family: myFont;
 }
 
-
 .navBar{
-  /* background-color: rgb(192, 223, 149); */
-  border-radius: 4px; 
+  width: 100%;
    
 }
 
 .navBar ul{
-
+  border-radius: 8px;
+  background-color: rgb(199 226 169);
   overflow: auto;
   padding-bottom: 7px;
 }
@@ -45,12 +44,17 @@
   background-color: rgb(162, 155, 155);
 }
 
-.navBar img{  
-  position: absolute;
-  top: 7px;
-  left: 96%;
-  height: 30px;
-  width: 30px;
+.navBar .searchBox{
+  justify-content: center;
+  float: right;
+  padding: 6px;
+}
+
+.navBar .searchBox input{
+  border-radius: 4px;
+  padding: 4px;
+  width: 75px;
+  height: 24px;
 }
 
 /* CSS for text form*/

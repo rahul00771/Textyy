@@ -1,21 +1,19 @@
 import React from 'react'
-import {useState} from 'react'
 
 export default function NavBar(props)
 {
     return(
-      <nav className='navBar' style={props.myStyle}>
-      <ul className='navList'>
-
-        <li><a style = {props.navTextColor} href='/'>{props.first}</a></li>
-        <li><a style = {props.navTextColor} href='/'>{props.second}</a></li>
-        <li><a style = {props.navTextColor} href='#aboutPage'>{props.third}</a></li>
-
-
-        <img onClick={props.toggleMode} src={props.modeIcon}></img>
-
-      </ul>
-    </nav>
+    <nav className='navBar'>
+        <ul>
+          <li><a href='/'>{props.first}</a></li>
+          <li><a href='/'>{props.second}</a></li>
+          <li><a href='#aboutPage'>{props.third}</a></li>
+          {/* <div className='searchBox'>
+            <input type="text" placeholder='Search..'></input>
+            <button>ok</button>
+          </div> */}
+        </ul>
+      </nav>
       );
 }
 
