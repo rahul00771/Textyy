@@ -10,7 +10,7 @@ export default function NavBar(props)
           
           <li><a style = {props.navTextColor} href='/'>{props.first}</a></li>
           <li><a style = {props.navTextColor} href='/'>{props.second}</a></li>
-          <li><a style = {props.navTextColor} href='#aboutPage'>{props.third}</a></li>
+          <li><a style = {props.navTextColor} href = '/'>{props.third}</a></li>
           
 
           <img onClick={props.toggleMode} src={props.modeIcon}></img>

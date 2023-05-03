@@ -1,10 +1,11 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
+import TextForm from './Components/TextForm';
 
 //This component is the componenet with the text form
 //In this comp, state is used to analyze it and perform the necessary method
 
 
-export default function  TextForm(props)
+export default function TextForm(props)
 {
     const [text, setText] = useState("");
     let newText = "";
@@ -16,7 +17,7 @@ export default function  TextForm(props)
     }
 
     function handleUpClick()
-    {
+    { 
         newText = text.toUpperCase();
         setText(newText);
     }
