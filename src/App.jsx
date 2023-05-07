@@ -21,7 +21,7 @@ function App() {
 
   //body color and dark mode icon
   const [mode, setMode]  = useState({
-    iconSrc : './public/moon.png',
+    iconSrc : './moon.png',
   });
 
   //for text of navbar
@@ -39,12 +39,12 @@ function App() {
   //toggle dunction(will be sent to NavBar as a Prop)
   const toggleMode = ()=>{
     setMode(                //for navbar icon and body
-      mode.iconSrc == "./public/moon.png" 
+      mode.iconSrc == "./moon.png" 
       ? {
-        iconSrc : './public/brightness.png',
+        iconSrc : './brightness.png',
       } 
       : {
-        iconSrc : './public/moon.png',
+        iconSrc : './moon.png',
       }
     )
     setnavStyle(
@@ -69,7 +69,7 @@ function App() {
     )
 
     setTextFormStyle(
-      mode.iconSrc == "./public/brightness.png" 
+      mode.iconSrc == "./brightness.png" 
       ? {
         backgroundColor : "white",
         color : "black",
@@ -82,8 +82,8 @@ function App() {
 
   }
 
-  document.body.style.backgroundColor = mode.iconSrc == "./public/moon.png" ? "#CBE4DE" : "#2C3333";
-  document.body.style.color = mode.iconSrc == "./public/moon.png" ? "black" : "white";
+  document.body.style.backgroundColor = mode.iconSrc == "./moon.png" ? "#CBE4DE" : "#2C3333";
+  document.body.style.color = mode.iconSrc == "./moon.png" ? "black" : "white";
 
   return (
     <Router>

@@ -73,7 +73,7 @@ export default function  TextForm(props)
             <button style={props.textFormColor} onClick={handleRepeatClick}>Repeat 'x' number of times</button>
             <input style={props.textFormColor} className='xInput' size={1} onChange={handleRepeatChange} placeholder ='   x'></input>
             <h2>Preview:</h2>
-            <p>The text has {wordCount(text)} words and {text.length} characters<img onClick={copyToClipboard} className='copyImage' src='../public/copyIcon.png'></img></p>
+            <p>The text has {wordCount(text)} words and {text.length} characters<img onClick={copyToClipboard} className='copyImage' src='./copyIcon.png'></img></p>
             <p className='output'><b>{text}</b></p>
         </div>
         </>
