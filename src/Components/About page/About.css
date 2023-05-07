@@ -1,0 +1,40 @@
+*{
+    box-sizing: border-box;
+}
+
+
+.about{
+    text-align: center;
+    font-size: 50px;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+.flex-container{
+    display: flex;
+}
+
+.flex-item{
+    width: 50%;
+    margin: 40px;
+}
+
+
+.subAbout{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+
+.icon-container{
+    display: flex;
+    gap: 66px;
+    align-items: center;
+    justify-content:center;
+    
+}
+
+.flex-img{
+   height: 65px;
+}
+

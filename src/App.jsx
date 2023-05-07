@@ -2,6 +2,15 @@ import './App.css'
 import NavBar from './Components/NavBar'
 import TextForm from './Components/TextForm'
 import { useState } from 'react'
+import AboutPage from './Components/About page/AboutPage'
+//import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+
 
 function App() {
 
@@ -77,11 +86,28 @@ function App() {
   document.body.style.color = mode.iconSrc == "./public/moon.png" ? "black" : "white";
 
   return (
-    <>
-      <NavBar first = "TextUtils" second = "Home"  third = "About Us" modeIcon = {mode.iconSrc} toggleMode = {toggleMode} myStyle = {navStyle} navTextColor = {textColorNav}/>
-      <TextForm textFormColor = {textFormStyle}/>
-    </>
-  )
+    <Router>
+      <div>
+
+        <NavBar first = "Textyy" second = "Home"  third = "About" modeIcon = {mode.iconSrc} toggleMode = {toggleMode} myStyle = {navStyle} navTextColor = {textColorNav}/>
+
+        <Switch>
+          <Route path="/about">
+            <AboutPage />
+          </Route>
+          
+          <Route path="/">
+            <TextForm textFormColor = {textFormStyle}/>
+          </Route>
+        </Switch>
+
+        {/* <TextForm textFormColor = {textFormStyle}/> */}
+        {/* <AboutPage/> */}
+
+      </div>
+      </Router>
+  );
+  
 }
 
 export default App

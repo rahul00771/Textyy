@@ -1,5 +1,6 @@
 import React from 'react'
 import {useState} from 'react'
+import { Link } from 'react-router-dom';
 
 export default function NavBar(props)
 {
@@ -7,9 +8,9 @@ export default function NavBar(props)
       <nav className='navBar' style={props.myStyle}>
       <ul className='navList'>
 
-        <li><a style = {props.navTextColor} href='/'>{props.first}</a></li>
-        <li><a style = {props.navTextColor} href='/'>{props.second}</a></li>
-        <li><a style = {props.navTextColor} href='#aboutPage'>{props.third}</a></li>
+        <li><Link style = {props.navTextColor} to ='/'>{props.first}</Link></li>
+        <li><Link style = {props.navTextColor} to ='/'>{props.second}</Link></li>
+        <li><Link style = {props.navTextColor}  to ='about'>{props.third}</Link></li>
 
 
         <img onClick={props.toggleMode} src={props.modeIcon}></img>
